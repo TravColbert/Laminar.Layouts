@@ -1,0 +1,61 @@
+@import "laminar-sizes";
+@import "sizes";
+
+@import "laminar-colors";
+@import "colors";
+
+.button, .btn {
+  box-sizing: border-box;
+  color: @color-fore-r;
+  background-color: @color-back-r;
+  box-shadow: @shadow-box @color-shadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  margin: 0 0.5em;
+  cursor: pointer;
+  border: 4px solid;
+  border-radius: @radius-small;
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.button-rounded, .btn-rounded {
+  border-radius: @radius-medium;
+}
+
+.button-translucent, .btn-translucent {
+  background-color: @color-back
+}
+
+.button-accept,
+.btn-accept {
+  border: @color-accept;
+  background-color: @color-accept;
+  &.hollow {
+    background-color: none;
+  }
+  &.translucent {
+    background-color: fade(@color-accept,@opacity-75);
+  }
+  &:hover {
+    background-color: (@color-accept + @color-hover);
+  }
+}
+
+.button-decline,
+.btn-decline {
+  border: @color-decline;
+  background-color: @color-decline;
+  &.hollow {
+    background-color: none;
+  }
+  &.translucent {
+    background-color: fade(@color-decline,@opacity-75)
+  }
+  &:hover {
+    background-color: (@color-decline + @color-hover);
+  }
+}
