@@ -544,6 +544,7 @@ img.border-circle {
   .layout-xs-width-7-8 {
     width: 87.5%;
   }
+  .layout-width-sd,
   .layout-xs-width-1-1,
   .layout-xs-width-2-2,
   .layout-xs-width-3-3,
@@ -647,6 +648,7 @@ img.border-circle {
   .layout-sm-size-x6 {
     flex: 6;
   }
+  .layout-width-sd,
   .layout-sm-width-sd,
   .layout-width-static {
     width: 425px;
@@ -779,6 +781,7 @@ img.border-circle {
   .layout-md-width-xs {
     width: 425px;
   }
+  .layout-width-sd,
   .layout-md-width-sm,
   .layout-width-static {
     width: 425px;
@@ -917,6 +920,7 @@ img.border-circle {
   .layout-lg-width-md {
     width: 768px;
   }
+  .layout-width-sd,
   .layout-lg-width-sd,
   .layout-width-static {
     width: 960px;
@@ -1056,8 +1060,9 @@ img.border-circle {
     width: 768px;
   }
   .layout-xl-width-sd {
-    width: 960px;
+    width: 1024px;
   }
+  .layout-width-sd,
   .layout-xl-width-lg,
   .layout-width-static {
     width: 1024px;
