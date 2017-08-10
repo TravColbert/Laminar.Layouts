@@ -278,11 +278,23 @@ img.border-circle {
 .layout-width-xl {
   width: 1280px;
 }
+.layout-width-1-12 {
+  width: 8.3%;
+}
+.layout-width-1-10 {
+  width: 10%;
+}
+.layout-width-1-9 {
+  width: 11.1%;
+}
 .layout-width-1-8 {
   width: 12.5%;
 }
 .layout-width-1-6 {
   width: 16.5%;
+}
+.layout-width-1-5 {
+  width: 20%;
 }
 .layout-width-1-4,
 .layout-width-2-8 {
