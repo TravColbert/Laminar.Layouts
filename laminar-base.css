@@ -203,62 +203,62 @@ img.border-circle {
 .layout-height-6-6,
 .layout-height-7-7,
 .layout-height-8-8 {
-  height: 100vh;
+  height: 100%;
 }
 .layout-height-7-8 {
-  height: 87.5vh;
+  height: 87.5%;
 }
 .layout-height-5-6 {
-  height: 82.5vh;
+  height: 82.5%;
 }
 .layout-height-4-5 {
-  height: 80vh;
+  height: 80%;
 }
 .layout-height-3-4,
 .layout-height-6-8 {
-  height: 75vh;
+  height: 75%;
 }
 .layout-height-2-3,
 .layout-height-4-6 {
-  height: 66.6vh;
+  height: 66.6%;
 }
 .layout-height-5-8 {
-  height: 62.5vh;
+  height: 62.5%;
 }
 .layout-height-3-5 {
-  height: 60vh;
+  height: 60%;
 }
 .layout-height-1-2,
 .layout-height-2-4,
 .layout-height-3-6,
 .layout-height-4-8 {
-  height: 50vh;
+  height: 50%;
 }
 .layout-height-2-5 {
-  height: 40vh;
+  height: 40%;
 }
 .layout-height-1-3,
 .layout-height-2-6 {
-  height: 33.3vh;
+  height: 33.3%;
 }
 .layout-height-3-8 {
-  height: 37.5vh;
+  height: 37.5%;
 }
 .layout-height-1-4,
 .layout-height-2-8 {
-  height: 25vh;
+  height: 25%;
 }
 .layout-height-1-5 {
-  height: 20vh;
+  height: 20%;
 }
 .layout-height-1-6 {
-  height: 16.5vh;
+  height: 16.5%;
 }
 .layout-height-1-7 {
-  height: 14.28vh;
+  height: 14.28%;
 }
 .layout-height-1-8 {
-  height: 12.5vh;
+  height: 12.5%;
 }
 .layout-width-xs {
   width: 425px;
@@ -458,7 +458,8 @@ img.border-circle {
 .text-shrink-x3 {
   font-size: 0.5em;
 }
-.nobreak {
+.nobreak,
+.text-nobreak {
   white-space: nowrap;
 }
 @media only screen and (max-width: 424px) {
@@ -744,7 +745,7 @@ img.border-circle {
     text-align: justify;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 959px) {
   .layout-md-col {
     flex-direction: column;
   }
@@ -877,7 +878,146 @@ img.border-circle {
     text-align: justify;
   }
 }
+@media only screen and (min-width: 960px) and (max-width: 1023px) {
+  body {
+    font-size: 1.1em;
+  }
+  .layout-sd-col {
+    flex-direction: column;
+  }
+  .layout-sd-row {
+    flex-direction: row;
+  }
+  .layout-sd-hidden {
+    display: none;
+  }
+  .layout-sd-order-1 {
+    order: 1;
+  }
+  .layout-sd-order-2 {
+    order: 2;
+  }
+  .layout-sd-order-3 {
+    order: 3;
+  }
+  .layout-sd-order-4 {
+    order: 4;
+  }
+  .layout-sd-order-5 {
+    order: 5;
+  }
+  .layout-sd-order-6 {
+    order: 6;
+  }
+  .layout-sd-size-x0 {
+    flex: 0;
+  }
+  .layout-sd-size-x1 {
+    flex: 1;
+  }
+  .layout-sd-size-x2 {
+    flex: 2;
+  }
+  .layout-sd-size-x3 {
+    flex: 3;
+  }
+  .layout-sd-size-x4 {
+    flex: 4;
+  }
+  .layout-sd-size-x5 {
+    flex: 5;
+  }
+  .layout-sd-size-x6 {
+    flex: 6;
+  }
+  .layout-sd-width-xs {
+    width: 425px;
+  }
+  .layout-width-sd,
+  .layout-sd-width-sm,
+  .layout-width-static {
+    width: 768px;
+  }
+  .layout-sd-width-1-8 {
+    width: 12.5%;
+  }
+  .layout-sd-width-1-6 {
+    width: 16.5%;
+  }
+  .layout-sd-width-1-4,
+  .layout-sd-width-2-8 {
+    width: 25%;
+  }
+  .layout-sd-width-1-3,
+  .layout-sd-width-2-6 {
+    width: 33.3%;
+  }
+  .layout-sd-width-3-8 {
+    width: 37.5%;
+  }
+  .layout-sd-width-1-2,
+  .layout-sd-width-2-4,
+  .layout-sd-width-3-6,
+  .layout-sd-width-4-8 {
+    width: 50%;
+  }
+  .layout-sd-width-5-8 {
+    width: 62.5%;
+  }
+  .layout-sd-width-2-3,
+  .layout-sd-width-4-6 {
+    width: 66.6%;
+  }
+  .layout-sd-width-3-4,
+  .layout-sd-width-6-8 {
+    width: 75%;
+  }
+  .layout-sd-width-5-6 {
+    width: 82.5%;
+  }
+  .layout-sd-width-7-8 {
+    width: 87.5%;
+  }
+  .layout-sd-width-1-1,
+  .layout-sd-width-2-2,
+  .layout-sd-width-3-3,
+  .layout-sd-width-4-4,
+  .layout-sd-width-6-6,
+  .layout-sd-width-8-8 {
+    width: 100%;
+  }
+  .layout-sd-justify-start {
+    justify-content: flex-start;
+  }
+  .layout-sd-justify-end {
+    justify-content: flex-end;
+  }
+  .layout-sd-justify-center {
+    justify-content: center;
+  }
+  .layout-sd-justify-between {
+    justify-content: space-between;
+  }
+  .layout-sd-justify-around {
+    justify-content: space-around;
+  }
+  .text-sd-align-left {
+    text-align: left;
+  }
+  .text-sd-align-right {
+    text-align: right;
+  }
+  .text-sd-align-center {
+    text-align: center;
+  }
+  .text-sd-align-justify {
+    text-align: justify;
+  }
+}
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    font-size: 1.2em;
+  }
   .layout-lg-col {
     flex-direction: column;
   }
@@ -1017,6 +1157,9 @@ img.border-circle {
   }
 }
 @media only screen and (min-width: 1280px) {
+  body {
+    font-size: 1.2em;
+  }
   .layout-xl-col {
     flex-direction: column;
   }
