@@ -43,6 +43,7 @@ body {
   color: #3d3b30;
   background-color: #fcfcfc;
   box-sizing: border-box;
+  margin: 0;
 }
 header,
 nav,
@@ -260,6 +261,13 @@ img.border-circle {
 .layout-height-1-8 {
   height: 12.5%;
 }
+.layout-height-1-10 {
+  height: 10%;
+}
+.layout-height-1-12 {
+  height: 8.3%;
+}
+
 .layout-width-xs {
   width: 425px;
 }
