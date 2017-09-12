@@ -43,6 +43,7 @@ body {
   color: #3d3b30;
   background-color: #fcfcfc;
   box-sizing: border-box;
+  margin: 0;
 }
 header,
 nav,
