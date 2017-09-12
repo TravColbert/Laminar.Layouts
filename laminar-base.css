@@ -238,12 +238,12 @@ img.border-circle {
 .layout-height-2-5 {
   height: 40%;
 }
+.layout-height-3-8 {
+  height: 37.5%;
+}
 .layout-height-1-3,
 .layout-height-2-6 {
   height: 33.3%;
-}
-.layout-height-3-8 {
-  height: 37.5%;
 }
 .layout-height-1-4,
 .layout-height-2-8 {
@@ -617,6 +617,67 @@ img.border-circle {
   .layout-xs-width-8-8 {
     width: 100%;
   }
+  .layout-xs-height-1-1,
+  .layout-xs-height-2-2,
+  .layout-xs-height-3-3,
+  .layout-xs-height-4-4,
+  .layout-xs-height-5-5,
+  .layout-xs-height-6-6,
+  .layout-xs-height-8-8 {
+    height: 100%;
+  }
+  .layout-xs-height-7-8 {
+    height: 87.5%;
+  }
+  .layout-xs-height-5-6 {
+    height: 82.5%;
+  }
+  .layout-xs-height-4-5 {
+    height: 80%;
+  }
+  .layout-xs-height-3-4,
+  .layout-xs-height-6-8 {
+    height: 75%;
+  }
+  .layout-xs-height-2-3,
+  .layout-xs-height-4-6 {
+    height: 66.6%;
+  }
+  .layout-xs-height-5-8 {
+    height: 62.5%;
+  }
+  .layout-xs-height-3-5 {
+    height: 60%;
+  }
+  .layout-xs-height-1-2,
+  .layout-xs-height-2-4,
+  .layout-xs-height-3-6,
+  .layout-xs-height-4-8 {
+    height: 50%;
+  }
+  .layout-xs-height-2-5 {
+    height: 40%;
+  }
+  .layout-xs-height-3-8 {
+    height: 37.5%;
+  }
+  .layout-xs-height-1-3,
+  .layout-xs-height-2-6 {
+    height: 33.3%;
+  }
+  .layout-xs-height-1-4,
+  .layout-xs-height-2-8 {
+    height: 25%;
+  }
+  .layout-xs-height-1-5 {
+    height: 20%;
+  }
+  .layout-xs-height-1-6 {
+    height: 16.5%;
+  }
+  .layout-xs-height-1-8 {
+    height: 12.5%;
+  }
   .layout-xs-justify-start {
     justify-content: flex-start;
   }
@@ -815,6 +876,67 @@ img.border-circle {
   .layout-sm-width-12-12 {
     width: 100%;
   }
+  .layout-sm-height-1-1,
+  .layout-sm-height-2-2,
+  .layout-sm-height-3-3,
+  .layout-sm-height-4-4,
+  .layout-sm-height-5-5,
+  .layout-sm-height-6-6,
+  .layout-sm-height-8-8 {
+    height: 100%;
+  }
+  .layout-sm-height-7-8 {
+    height: 87.5%;
+  }
+  .layout-sm-height-5-6 {
+    height: 82.5%;
+  }
+  .layout-sm-height-4-5 {
+    height: 80%;
+  }
+  .layout-sm-height-3-4,
+  .layout-sm-height-6-8 {
+    height: 75%;
+  }
+  .layout-sm-height-2-3,
+  .layout-sm-height-4-6 {
+    height: 66.6%;
+  }
+  .layout-sm-height-5-8 {
+    height: 62.5%;
+  }
+  .layout-sm-height-3-5 {
+    height: 60%;
+  }
+  .layout-sm-height-1-2,
+  .layout-sm-height-2-4,
+  .layout-sm-height-3-6,
+  .layout-sm-height-4-8 {
+    height: 50%;
+  }
+  .layout-sm-height-2-5 {
+    height: 40%;
+  }
+  .layout-sm-height-3-8 {
+    height: 37.5%;
+  }
+  .layout-sm-height-1-3,
+  .layout-sm-height-2-6 {
+    height: 33.3%;
+  }
+  .layout-sm-height-1-4,
+  .layout-sm-height-2-8 {
+    height: 25%;
+  }
+  .layout-sm-height-1-5 {
+    height: 20%;
+  }
+  .layout-sm-height-1-6 {
+    height: 16.5%;
+  }
+  .layout-sm-height-1-8 {
+    height: 12.5%;
+  }
   .layout-sm-justify-start {
     justify-content: flex-start;
   }
@@ -997,6 +1119,67 @@ img.border-circle {
   .layout-md-width-10-10,
   .layout-md-width-12-12 {
     width: 100%;
+  }
+  .layout-md-height-1-1,
+  .layout-md-height-2-2,
+  .layout-md-height-3-3,
+  .layout-md-height-4-4,
+  .layout-md-height-5-5,
+  .layout-md-height-6-6,
+  .layout-md-height-8-8 {
+    height: 100%;
+  }
+  .layout-md-height-7-8 {
+    height: 87.5%;
+  }
+  .layout-md-height-5-6 {
+    height: 82.5%;
+  }
+  .layout-md-height-4-5 {
+    height: 80%;
+  }
+  .layout-md-height-3-4,
+  .layout-md-height-6-8 {
+    height: 75%;
+  }
+  .layout-md-height-2-3,
+  .layout-md-height-4-6 {
+    height: 66.6%;
+  }
+  .layout-md-height-5-8 {
+    height: 62.5%;
+  }
+  .layout-md-height-3-5 {
+    height: 60%;
+  }
+  .layout-md-height-1-2,
+  .layout-md-height-2-4,
+  .layout-md-height-3-6,
+  .layout-md-height-4-8 {
+    height: 50%;
+  }
+  .layout-md-height-2-5 {
+    height: 40%;
+  }
+  .layout-md-height-3-8 {
+    height: 37.5%;
+  }
+  .layout-md-height-1-3,
+  .layout-md-height-2-6 {
+    height: 33.3%;
+  }
+  .layout-md-height-1-4,
+  .layout-md-height-2-8 {
+    height: 25%;
+  }
+  .layout-md-height-1-5 {
+    height: 20%;
+  }
+  .layout-md-height-1-6 {
+    height: 16.5%;
+  }
+  .layout-md-height-1-8 {
+    height: 12.5%;
   }
   .layout-md-justify-start {
     justify-content: flex-start;
@@ -1183,6 +1366,67 @@ img.border-circle {
   .layout-sd-width-10-10,
   .layout-sd-width-12-12 {
     width: 100%;
+  }
+  .layout-sd-height-1-1,
+  .layout-sd-height-2-2,
+  .layout-sd-height-3-3,
+  .layout-sd-height-4-4,
+  .layout-sd-height-5-5,
+  .layout-sd-height-6-6,
+  .layout-sd-height-8-8 {
+    height: 100%;
+  }
+  .layout-sd-height-7-8 {
+    height: 87.5%;
+  }
+  .layout-sd-height-5-6 {
+    height: 82.5%;
+  }
+  .layout-sd-height-4-5 {
+    height: 80%;
+  }
+  .layout-sd-height-3-4,
+  .layout-sd-height-6-8 {
+    height: 75%;
+  }
+  .layout-sd-height-2-3,
+  .layout-sd-height-4-6 {
+    height: 66.6%;
+  }
+  .layout-sd-height-5-8 {
+    height: 62.5%;
+  }
+  .layout-sd-height-3-5 {
+    height: 60%;
+  }
+  .layout-sd-height-1-2,
+  .layout-sd-height-2-4,
+  .layout-sd-height-3-6,
+  .layout-sd-height-4-8 {
+    height: 50%;
+  }
+  .layout-sd-height-2-5 {
+    height: 40%;
+  }
+  .layout-sd-height-3-8 {
+    height: 37.5%;
+  }
+  .layout-sd-height-1-3,
+  .layout-sd-height-2-6 {
+    height: 33.3%;
+  }
+  .layout-sd-height-1-4,
+  .layout-sd-height-2-8 {
+    height: 25%;
+  }
+  .layout-sd-height-1-5 {
+    height: 20%;
+  }
+  .layout-sd-height-1-6 {
+    height: 16.5%;
+  }
+  .layout-sd-height-1-8 {
+    height: 12.5%;
   }
   .layout-sd-justify-start {
     justify-content: flex-start;
@@ -1375,6 +1619,67 @@ img.border-circle {
   .layout-lg-width-10-10,
   .layout-lg-width-12-12 {
     width: 100%;
+  }
+  .layout-lg-height-1-1,
+  .layout-lg-height-2-2,
+  .layout-lg-height-3-3,
+  .layout-lg-height-4-4,
+  .layout-lg-height-5-5,
+  .layout-lg-height-6-6,
+  .layout-lg-height-8-8 {
+    height: 100%;
+  }
+  .layout-lg-height-7-8 {
+    height: 87.5%;
+  }
+  .layout-lg-height-5-6 {
+    height: 82.5%;
+  }
+  .layout-lg-height-4-5 {
+    height: 80%;
+  }
+  .layout-lg-height-3-4,
+  .layout-lg-height-6-8 {
+    height: 75%;
+  }
+  .layout-lg-height-2-3,
+  .layout-lg-height-4-6 {
+    height: 66.6%;
+  }
+  .layout-lg-height-5-8 {
+    height: 62.5%;
+  }
+  .layout-lg-height-3-5 {
+    height: 60%;
+  }
+  .layout-lg-height-1-2,
+  .layout-lg-height-2-4,
+  .layout-lg-height-3-6,
+  .layout-lg-height-4-8 {
+    height: 50%;
+  }
+  .layout-lg-height-2-5 {
+    height: 40%;
+  }
+  .layout-lg-height-3-8 {
+    height: 37.5%;
+  }
+  .layout-lg-height-1-3,
+  .layout-lg-height-2-6 {
+    height: 33.3%;
+  }
+  .layout-lg-height-1-4,
+  .layout-lg-height-2-8 {
+    height: 25%;
+  }
+  .layout-lg-height-1-5 {
+    height: 20%;
+  }
+  .layout-lg-height-1-6 {
+    height: 16.5%;
+  }
+  .layout-lg-height-1-8 {
+    height: 12.5%;
   }
   .layout-lg-justify-start {
     justify-content: flex-start;
@@ -1570,6 +1875,67 @@ img.border-circle {
   .layout-xl-width-10-10,
   .layout-xl-width-12-12 {
     width: 100%;
+  }
+  .layout-xl-height-1-1,
+  .layout-xl-height-2-2,
+  .layout-xl-height-3-3,
+  .layout-xl-height-4-4,
+  .layout-xl-height-5-5,
+  .layout-xl-height-6-6,
+  .layout-xl-height-8-8 {
+    height: 100%;
+  }
+  .layout-xl-height-7-8 {
+    height: 87.5%;
+  }
+  .layout-xl-height-5-6 {
+    height: 82.5%;
+  }
+  .layout-xl-height-4-5 {
+    height: 80%;
+  }
+  .layout-xl-height-3-4,
+  .layout-xl-height-6-8 {
+    height: 75%;
+  }
+  .layout-xl-height-2-3,
+  .layout-xl-height-4-6 {
+    height: 66.6%;
+  }
+  .layout-xl-height-5-8 {
+    height: 62.5%;
+  }
+  .layout-xl-height-3-5 {
+    height: 60%;
+  }
+  .layout-xl-height-1-2,
+  .layout-xl-height-2-4,
+  .layout-xl-height-3-6,
+  .layout-xl-height-4-8 {
+    height: 50%;
+  }
+  .layout-xl-height-2-5 {
+    height: 40%;
+  }
+  .layout-xl-height-3-8 {
+    height: 37.5%;
+  }
+  .layout-xl-height-1-3,
+  .layout-xl-height-2-6 {
+    height: 33.3%;
+  }
+  .layout-xl-height-1-4,
+  .layout-xl-height-2-8 {
+    height: 25%;
+  }
+  .layout-xl-height-1-5 {
+    height: 20%;
+  }
+  .layout-xl-height-1-6 {
+    height: 16.5%;
+  }
+  .layout-xl-height-1-8 {
+    height: 12.5%;
   }
   .layout-xl-justify-start {
     justify-content: flex-start;
