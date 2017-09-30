@@ -952,6 +952,21 @@ img.border-circle {
   .layout-sm-justify-around {
     justify-content: space-around;
   }
+  .layout-sm-align-start {
+    align-items: flex-start;
+  }
+  .layout-sm-align-end {
+    align-items: flex-end;
+  }
+  .layout-sm-align-center {
+    align-items: center;
+  }
+  .layout-sm-align-stretch {
+    align-items: stretch;
+  }
+  .layout-sm-align-baseline {
+    align-items: baseline;
+  }
   .text-sm-align-left {
     text-align: left;
   }
@@ -1195,6 +1210,21 @@ img.border-circle {
   }
   .layout-md-justify-around {
     justify-content: space-around;
+  }
+  .layout-md-align-start {
+    align-items: flex-start;
+  }
+  .layout-md-align-end {
+    align-items: flex-end;
+  }
+  .layout-md-align-center {
+    align-items: center;
+  }
+  .layout-md-align-stretch {
+    align-items: stretch;
+  }
+  .layout-md-align-baseline {
+    align-items: baseline;
   }
   .text-md-align-left {
     text-align: left;
@@ -1442,6 +1472,21 @@ img.border-circle {
   }
   .layout-sd-justify-around {
     justify-content: space-around;
+  }
+  .layout-sd-align-start {
+    align-items: flex-start;
+  }
+  .layout-sd-align-end {
+    align-items: flex-end;
+  }
+  .layout-sd-align-center {
+    align-items: center;
+  }
+  .layout-sd-align-stretch {
+    align-items: stretch;
+  }
+  .layout-sd-align-baseline {
+    align-items: baseline;
   }
   .text-sd-align-left {
     text-align: left;
@@ -1695,6 +1740,21 @@ img.border-circle {
   }
   .layout-lg-justify-around {
     justify-content: space-around;
+  }
+  .layout-lg-align-start {
+    align-items: flex-start;
+  }
+  .layout-lg-align-end {
+    align-items: flex-end;
+  }
+  .layout-lg-align-center {
+    align-items: center;
+  }
+  .layout-lg-align-stretch {
+    align-items: stretch;
+  }
+  .layout-lg-align-baseline {
+    align-items: baseline;
   }
   .text-lg-align-left {
     text-align: left;
@@ -1951,6 +2011,21 @@ img.border-circle {
   }
   .layout-xl-justify-around {
     justify-content: space-around;
+  }
+  .layout-xl-align-start {
+    align-items: flex-start;
+  }
+  .layout-xl-align-end {
+    align-items: flex-end;
+  }
+  .layout-xl-align-center {
+    align-items: center;
+  }
+  .layout-xl-align-stretch {
+    align-items: stretch;
+  }
+  .layout-xl-align-baseline {
+    align-items: baseline;
   }
   .text-xl-align-left {
     text-align: left;
