@@ -82,7 +82,8 @@ aside,
 footer {
   box-sizing: border-box;
   display: flex;
-  flex: 0;  // No element should be greedy by default
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 div {
@@ -172,10 +173,10 @@ footer {
   align-items: baseline;
 }
 
-.nav {
-  .layout-row;
-  flex: 1;  // Navs are greedy by default
-}
+// .nav {
+//   .layout-row;
+//   flex: 1;  // Navs are greedy by default
+// }
 
 ol.nav, ul.nav {
   list-style-type: none;
