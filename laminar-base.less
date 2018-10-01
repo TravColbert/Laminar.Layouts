@@ -43,23 +43,23 @@
 /**
  * Z-Levels
  */
-.layout-z-top, .layout-z-100 {
+.layout-z-top, .z-top, .z-100 {
   z-index: 100;
 }
 
-.layout-z-75 {
+.layout-z-75, .z-75 {
   z-index: 75;
 }
 
-.layout-z-center, .layout-z-50 {
+.layout-z-center, .z-center, .z-50 {
   z-index: 50;
 }
 
-.layout-z-25 {
+.layout-z-25, .z-25 {
   z-index: 25;
 }
 
-.layout-z-bottom, .layout-z-0 {
+.layout-z-bottom, .z-bottom, .z-0 {
   z-index: 0;
 }
 
@@ -68,6 +68,7 @@ html, body {
   min-height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   color: @color-fore;
   background-color: @color-back;
   box-sizing: border-box;
@@ -76,8 +77,8 @@ html, body {
 
 header,
 nav,
+article,
 section,
-sidebar,
 aside,
 footer {
   box-sizing: border-box;
@@ -178,10 +179,16 @@ footer {
 //   flex: 1;  // Navs are greedy by default
 // }
 
-ol.nav, ul.nav {
+nav ol, nav ul, ol.nav, ul.nav {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.banner-full {
+  background-size: auto, cover;
+  width: 100%;
+  position: relative;
 }
 
 .badge {
@@ -201,327 +208,360 @@ img.border-circle {
   border-radius: 50%;
 }
 
-.layout-col,
-.layout-row,
-.layout-col-reverse,
-.layout-row-reverse,
-.layout-xs-col,
-.layout-sm-col,
-.layout-md-col,
-.layout-lg-col,
-.layout-xl-col,
-.layout-xs-row,
-.layout-sm-row,
-.layout-md-row,
-.layout-lg-row,
-.layout-xl-row {
+.layout-col, .l-col,
+.layout-row, .l-row,
+.layout-col-reverse, .l-col-rev,
+.layout-row-reverse, .l-row-rev,
+.layout-xs-col, .l-xs-col,
+.layout-sm-col, .l-sm-col,
+.layout-md-col, .l-md-col,
+.layout-lg-col, .l-lg-col,
+.layout-xl-col, .l-xl-col,
+.layout-xs-row, .l-xs-row,
+.layout-sm-row, .l-sm-row,
+.layout-md-row, .l-md-row,
+.layout-lg-row, .l-lg-row,
+.layout-xl-row, .l-xl-row {
   display: flex;
   box-sizing: border-box;
 }
 
-.layout-col {
+.layout-col, .l-col {
   flex-direction: column;
 }
 
-.layout-row {
+.layout-row, .l-row {
   flex-direction: row;
 }
 
-.layout-col-reverse {
+.layout-col-reverse, .l-col-rev {
   flex-direction: column-reverse;
 }
 
-.layout-row-reverse {
+.layout-row-reverse, .l-row-rev {
   flex-direction: row-reverse;
 }
 
-.layout-hidden, .hidden {
+.layout-hidden, .l-hidden, .hidden {
   display: none;
 }
 
 // General Heights
-.full-height {
+.full-height, .h-full, .h-100 {
   height: 100%;
 }
 
-.layout-height-1-1, .layout-height-2-2, .layout-height-3-3, .layout-height-4-4, .layout-height-5-5, .layout-height-6-6, .layout-height-7-7, .layout-height-8-8 {
+.layout-height-1-1, .h-1-1,
+.layout-height-2-2, .h-2-2,
+.layout-height-3-3, .h-3-3,
+.layout-height-4-4, .h-4-4,
+.layout-height-5-5, .h-5-5,
+.layout-height-6-6, .h-6-6,
+.layout-height-7-7, .h-7-7,
+.layout-height-8-8, .h-8-8 {
   height: 100%;
 }
-.layout-height-7-8 {
+.layout-height-7-8, .h-7-8 {
   height: 87.5%;
 }
-.layout-height-5-6 {
+.layout-height-5-6, .h-5-6 {
   height: 82.5%;
 }
-.layout-height-4-5 {
+.layout-height-4-5, .h-4-5 {
   height: 80%;
 }
-.layout-height-3-4, .layout-height-6-8 {
+.layout-height-3-4, .h-3-4
+.layout-height-6-8, .h-6-8 {
   height: 75%;
 }
-.layout-height-2-3, .layout-height-4-6 {
+.layout-height-2-3, .h-2-3,
+.layout-height-4-6, .h-4-6 {
   height: 66.6%;
 }
-.layout-height-5-8 {
+.layout-height-5-8, .h-5-8 {
   height: 62.5%;
 }
-.layout-height-3-5 {
+.layout-height-3-5, .h-3-5 {
   height: 60%;
 }
-.layout-height-1-2, .layout-height-2-4, .layout-height-3-6, .layout-height-4-8 {
+.layout-height-1-2, .h-1-2,
+.layout-height-2-4, .h-2-4,
+.layout-height-3-6, .h-3-6,
+.layout-height-4-8, .h-4-8 {
   height: 50%;
 }
-.layout-height-2-5 {
+.layout-height-2-5, .h-2-5 {
   height: 40%;
 }
-.layout-height-3-8 {
+.layout-height-3-8, .h-3-8 {
   height: 37.5%;
 }
-.layout-height-1-3, .layout-height-2-6 {
+.layout-height-1-3, .h-1-3,
+.layout-height-2-6, .h-2-6 {
   height: 33.3%;
 }
-.layout-height-1-4, .layout-height-2-8 {
+.layout-height-1-4, .h-1-4,
+.layout-height-2-8, .h-2-8 {
   height: 25%;
 }
-.layout-height-1-5 {
+.layout-height-1-5, .h-1-5 {
   height: 20%;
 }
-.layout-height-1-6 {
+.layout-height-1-6, .h-1-6 {
   height: 16.5%;
 }
-.layout-height-1-8 {
+.layout-height-1-8, .h-1-7 {
   height: 12.5%;
 }
 
 // RIGID WIDTHS
-.layout-width-xs {
+.layout-width-xs, .w-xs {
   width: @width-sm;
 }
 
-.layout-width-sm {
+.layout-width-sm, .w-sm {
   width: @width-sm;
 }
 
-.layout-width-md {
+.layout-width-md, .w-md {
   width: @width-md;
 }
 
-.layout-width-sd {
+.layout-width-sd, .w-sd {
   width: @width-sd;
 }
 
-.layout-width-lg {
+.layout-width-lg, .w-lg {
   width: @width-lg;
 }
 
-.layout-width-xl {
+.layout-width-xl, .w-xl {
   width: @width-xl;
 }
 
 // FLUID WIDTHS
-.layout-width-1-12 {
+.layout-width-1-12, .w-1-12 {
   width: 8.3%;
 }
-.layout-width-1-10 {
+.layout-width-1-10, .w-1-10 {
   width: 10%;
 }
-.layout-width-1-8 {
+.layout-width-1-8, .w-1-8 {
   width: 12.5%;
 }
-.layout-width-1-6, .layout-width-2-12 {
+.layout-width-1-6, .w-1-6,
+.layout-width-2-12, .w-2-12 {
   width: 16.5%;
 }
-.layout-width-1-5, .layout-width-2-10 {
+.layout-width-1-5, .w-1-5,
+.layout-width-2-10, .w-2-10 {
   width: 20%;
 }
-.layout-width-1-4, .layout-width-2-8, .layout-width-3-12 {
+.layout-width-1-4, .w-1-4,
+.layout-width-2-8, .w-2-8,
+.layout-width-3-12, .w-3-12 {
   width: 25%;
 }
-.layout-width-3-10 {
+.layout-width-3-10, .w-3-10 {
   width: 30%;
 }
-.layout-width-1-3, .layout-width-2-6, .layout-width-4-12 {
+.layout-width-1-3, .w-1-3,
+.layout-width-2-6, .w-2-6,
+.layout-width-4-12, .w-4-12 {
   width: 33.3%;
 }
-.layout-width-3-8 {
+.layout-width-3-8, .w-3-8 {
   width: 37.5%;
 }
-.layout-width-2-5, .layout-width-4-10 {
+.layout-width-2-5, .w-2-5,
+.layout-width-4-10, .w-4-10 {
   width: 40%;
 }
-.layout-width-5-12 {
+.layout-width-5-12, .w-5-12 {
   width: 41.16%;
 }
-.layout-width-1-2, .layout-width-2-4, .layout-width-3-6, .layout-width-4-8, .layout-width-5-10, .layout-width-6-12 {
+.layout-width-1-2, .w-1-2,
+.layout-width-2-4, .w-2-4,
+.layout-width-3-6, .w-3-6,
+.layout-width-4-8, .w-4-8,
+.layout-width-5-10, .w-5-10,
+.layout-width-6-12, .w-6-12 {
   width: 50%;
 }
-.layout-width-7-12 {
+.layout-width-7-12, .w-7-12 {
   width: 58.33%;
 }
-.layout-width-3-5, .layout-width-6-10 {
+.layout-width-3-5, .w-3-5,
+.layout-width-6-10, .w-6-10 {
   width: 60%;
 }
-.layout-width-5-8 {
+.layout-width-5-8, .w-5-8 {
   width: 62.5%;
 }
-.layout-width-2-3, .layout-width-4-6, .layout-width-8-12 {
+.layout-width-2-3, .w-2-3,
+.layout-width-4-6, .w-4-6,
+.layout-width-8-12, .w-8-12 {
   width: 66.6%;
 }
-.layout-width-7-10 {
+.layout-width-7-10, .w-7-10 {
   width: 70%;
 }
-.layout-width-3-4, .layout-width-6-8, .layout-width-9-12 {
+.layout-width-3-4, .w-3-4,
+.layout-width-6-8, .w-6-8,
+.layout-width-9-12 .w-9-12 {
   width: 75%;
 }
-.layout-width-4-5, .layout-width-8-10 {
+.layout-width-4-5, .w-4-5,
+.layout-width-8-10, .w-8-10 {
   width: 80%;
 }
-.layout-width-5-6, .layout-width-10-12 {
+.layout-width-5-6, .w-5-6,
+.layout-width-10-12, .w-10-12 {
   width: 82.5%;
 }
-.layout-width-7-8 {
+.layout-width-7-8, .w-7-8 {
   width: 87.5%;
 }
-.layout-width-9-10 {
+.layout-width-9-10, .w-9-10 {
   width: 90%;
 }
-.layout-width-11-12 {
+.layout-width-11-12, .w-11-12 {
   width: 91.16%;
 }
-.layout-width-1-1,
-.layout-width-2-2,
-.layout-width-3-3,
-.layout-width-4-4,
-.layout-width-6-6,
-.layout-width-8-8,
-.layout-width-10-10,
-.layout-width-12-12 {
+.layout-width-1-1, .w-1-1,
+.layout-width-2-2, .w-2-2,
+.layout-width-3-3, .w-3-3,
+.layout-width-4-4, .w-4-4,
+.layout-width-6-6, .w-5-5,
+.layout-width-8-8, .w-6-6,
+.layout-width-10-10, .w-10-10,
+.layout-width-12-12, .w-12-12 {
   width: 100%;
 }
 
 /**
  * Control the order of element
  */
-.layout-order-1 {
+.layout-order-1, o-1 {
   order: 1;
 }
-.layout-order-2 {
+.layout-order-2, o-2 {
   order: 2;
 }
-.layout-order-3 {
+.layout-order-3, o-3 {
   order: 3;
 }
-.layout-order-4 {
+.layout-order-4, o-4 {
   order: 4;
 }
-.layout-order-5 {
+.layout-order-5, o-5 {
   order: 5;
 }
-.layout-order-6 {
+.layout-order-6, o-6 {
   order: 6;
 }
 
 /**
  * Multiply width of this element by X
  */
-.layout-size-x0 {
+.layout-size-x0, .s-x0 {
   flex: 0;
 }
-.layout-size-x1 {
+.layout-size-x1, .s-x1 {
   flex: 1;
 }
-.layout-size-x2 {
+.layout-size-x2, .s-x2 {
   flex: 2;
 }
-.layout-size-x3 {
+.layout-size-x3, .s-x3 {
   flex: 3;
 }
-.layout-size-x4 {
+.layout-size-x4, .s-x4 {
   flex: 4;
 }
-.layout-size-x5 {
+.layout-size-x5, .s-x5 {
   flex: 5;
 }
-.layout-size-x6 {
+.layout-size-x6, .s-x6 {
   flex: 6;
 }
 
 /**
  * Alignment and Justifying
  */
-.layout-justify-start {
+.layout-justify-start, .justify-start {
   justify-content: flex-start;
 }
-.layout-justify-end {
+.layout-justify-end, .justify-end {
   justify-content: flex-end;
 }
-.layout-justify-center {
+.layout-justify-center, .justify-center {
   justify-content: center;
 }
-.layout-justify-between {
+.layout-justify-between, .justify-between {
   justify-content: space-between;
 }
-.layout-justify-around {
+.layout-justify-around, .justify-around {
   justify-content: space-around;
 }
-.layout-align-start {
+.layout-align-start, .align-start {
   align-items: flex-start;
 }
-.layout-align-end {
+.layout-align-end, .align-end {
   align-items: flex-end;
 }
-.layout-align-center {
+.layout-align-center, .align-center {
   align-items: center;
 }
-.layout-align-stretch {
+.layout-align-stretch, .align-stretch {
   align-items: stretch;
 }
-.layout-align-baseline {
+.layout-align-baseline, .align-baseline {
   align-items: baseline;
 }
 
 /**
  * Quick wrap class
  */
-.layout-wrap {
+.layout-wrap, .wrap {
   flex-wrap: wrap;
 }
 
-.layout-wrap-reverse {
+.layout-wrap-reverse, .wrap-rev {
   flex-wrap: wrap-reverse;
 }
 
 /**
  * TEXT formatting
  */
-.text-align-left {
+.text-align-left, .t-align-left {
   text-align: left;
 }
-.text-align-right {
+.text-align-right, .t-align-right {
   text-align: right;
 }
-.text-align-center {
+.text-align-center, .t-align-center {
   text-align: center;
 }
-.text-align-justify {
+.text-align-justify, .t-align-justify {
   text-align: justify;
 }
-.text-grow-x1 {
+.text-grow-x1, .t-grow-x1 {
   font-size: 1.1em
 }
-.text-grow-x2 {
+.text-grow-x2, .t-grow-x2 {
   font-size: 1.5em
 }
-.text-grow-x3 {
+.text-grow-x3, .t-grow-x3 {
   font-size: 2em
 }
-.text-shrink-x1 {
+.text-shrink-x1, .t-shrink-x1 {
   font-size: 0.9em
 }
-.text-shrink-x2 {
+.text-shrink-x2, .t-shrink-x2 {
   font-size: 0.75em
 }
-.text-shrink-x3 {
+.text-shrink-x3, .t-shrink-x3 {
   font-size: 0.5em
 }
 .nobreak,
@@ -533,64 +573,64 @@ img.border-circle {
   body {
     font-size: 0.8em;
   }
-  .layout-xs-col {
+  .layout-xs-col, .l-xs-col {
     flex-direction: column;
   }
-  .layout-xs-row {
+  .layout-xs-row, .l-xs-row {
     flex-direction: row;
   }
-  .layout-xs-col-reverse {
+  .layout-xs-col-reverse, .l-xs-col-rev {
     flex-direction: column;
   }
-  .layout-xs-row-reverse {
+  .layout-xs-row-reverse, .l-xs-row-rev {
     flex-direction: row;
   }
-  .layout-xs-hidden {
+  .layout-xs-hidden, .l-xs-hidden {
     .layout-hidden;
   }
-  .layout-xs-order-1 {
+  .layout-xs-order-1, .o-xs-1 {
     .layout-order-1;
   }
-  .layout-xs-order-2 {
+  .layout-xs-order-2, .o-xs-2 {
     .layout-order-2;
   }
-  .layout-xs-order-3 {
+  .layout-xs-order-3, .o-xs-3 {
     .layout-order-3;
   }
-  .layout-xs-order-4 {
+  .layout-xs-order-4, .o-xs-4 {
     .layout-order-4;
   }
-  .layout-xs-order-5 {
+  .layout-xs-order-5, .o-xs-5 {
     .layout-order-5;
   }
-  .layout-xs-order-6 {
+  .layout-xs-order-6, .o-xs-6 {
     .layout-order-6;
   }
-  .layout-xs-size-x0 {
+  .layout-xs-size-x0, .s-xs-x0 {
     .layout-size-x0;
   }
-  .layout-xs-size-x1 {
+  .layout-xs-size-x1, .s-xs-x1 {
     .layout-size-x1;
   }
-  .layout-xs-size-x2 {
+  .layout-xs-size-x2, .s-xs-x2 {
     .layout-size-x2;
   }
-  .layout-xs-size-x3 {
+  .layout-xs-size-x3, .s-xs-x3 {
     .layout-size-x3;
   }
-  .layout-xs-size-x4 {
+  .layout-xs-size-x4, .s-xs-x4 {
     .layout-size-x4;
   }
-  .layout-xs-size-x5 {
+  .layout-xs-size-x5, .s-xs-x5 {
     .layout-size-x5;
   }
-  .layout-xs-size-x6 {
+  .layout-xs-size-x6, .s-xs-x6 {
     .layout-size-x6;
   }
-  .layout-xs-width-1-8 {
+  .layout-xs-width-1-8, .w-xs-1-8 {
     width: 12.5%;
   }
-  .layout-xs-width-1-6 {
+  .layout-xs-width-1-6, .w-xs-1-6 {
     width: 16.5%;
   }
   .layout-xs-width-1-5 {
