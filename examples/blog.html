@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modern Blog Interface</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" media="all" href="../../Libraries/normalize.css">
+    <link rel="stylesheet" media="all" href="../laminar-base.css">
+    <style>
+      .first {
+        background-color: orange;
+      }
+      .second {
+        background-color: #ddd;
+      }
+      .first div {
+        /*border: 1px dotted red;*/
+      }
+      nav {
+        height: 8vh;
+        margin-top: -8vh;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+      }
+      article {
+        color: #333;
+        background-color: #eee;
+        padding-top: 8vh;
+      }
+      ul {
+        border-top-left-radius: 1vh;
+        border-top-right-radius: 1vh;
+        /*display: inline-block;*/
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #eee;
+      }
+
+      li {
+        float: left;
+        height: 100%;
+        font-size: 4vh;
+      }
+
+      li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+        background-color: #fff;
+      }
+      .maintitle {
+        color: #eee;
+      }
+      .maintitle h1 {
+        font-size: 8vh;
+        text-align: center;
+      }
+      .maintitle h2 {
+        font-size: 5vh;
+      }
+    </style>
+  </head>
+  <body class="align-center">
+    <section class="first h-full w-full align-center justify-center">
+      <div class="w-sd justify-center">
+        <div class="maintitle l-col textshadow align-center">
+          <h1>Building cool things that live on the Internet</h1>
+          <h2>What shall we do next?</h2>
+        </div>
+      </div>
+    </section>
+    <nav role="navigation" class="w-sd">
+      <ul class="nav w-full">
+        <li>
+          <a href="#">
+            <i class="material-icons menu-icon"></i>
+            Item 1
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons menu-icon"></i>
+            Item 2
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons menu-icon"></i>
+            Item 3
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="second h-full w-full l-col align-center">
+      <article class="w-sd">
+        Article 1
+      </article>
+      <article class="w-sd">
+        Article 2
+      </article>
+    </section>
+  </body>
+</html>
