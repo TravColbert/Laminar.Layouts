@@ -6,26 +6,34 @@
     <link rel="stylesheet" media="all" href="../../Libraries/normalize.css">
     <link rel="stylesheet" media="all" href="../laminar-base.css">
     <style>
+      section {
+        min-height: 100vh;
+      }
       .first {
         background-color: orange;
       }
       .second {
-        background-color: #ddd;
+        /* background-color: #ddd; */
       }
       .first div {
         /*border: 1px dotted red;*/
       }
+      article {
+        color: #333;
+        background-color: #eee;
+        padding: 8vh 6em 0;
+      }
+      article:last-child {
+        border-bottom-left-radius: 1vh;
+        border-bottom-right-radius: 1vh;
+        padding: 8vh 6em 8vh;
+      }
       nav {
-        height: 8vh;
+        height: 10vh;
         margin-top: -8vh;
         position: -webkit-sticky; /* Safari */
         position: sticky;
         top: 0;
-      }
-      article {
-        color: #333;
-        background-color: #eee;
-        padding-top: 8vh;
       }
       ul {
         border-top-left-radius: 1vh;
@@ -39,6 +47,7 @@
       }
 
       li {
+        display: flex;
         float: left;
         height: 100%;
         font-size: 4vh;
@@ -55,8 +64,10 @@
       li a:hover {
         background-color: #fff;
       }
+      /* Text Settings */
       .maintitle {
         color: #eee;
+        padding: 0 3em;
       }
       .maintitle h1 {
         font-size: 8vh;
@@ -65,10 +76,31 @@
       .maintitle h2 {
         font-size: 5vh;
       }
+      article .title {
+        font-size: 5vh;
+      }
+      article .subtitle {
+        font-size: 2.75vh;
+        margin: 1vh 0 0;
+      }
+      article .meta {
+        font-size: 2vh;
+        color: #999;
+        margin: 1vh 0 0;
+      }
+      article p {
+        font-size: 2.25vh;
+        margin: 2vh 0 0;
+      }
+      article .lead {
+        font-size: 3vh;
+        text-align: justify;
+        margin: 1.5vh 0 0;
+      }
     </style>
   </head>
   <body class="align-center">
-    <section class="first h-full w-full align-center justify-center">
+    <section class="first w-full align-center justify-center">
       <div class="w-sd justify-center">
         <div class="maintitle l-col textshadow align-center">
           <h1>Building cool things that live on the Internet</h1>
@@ -77,20 +109,25 @@
       </div>
     </section>
     <nav role="navigation" class="w-sd">
-      <ul class="nav w-full">
-        <li>
+      <ul class="nav w-full l-row">
+        <li class="brand s-x3">
+          <a href="/">
+            TravisColbert.com
+          </a>
+        </li>
+        <li class="s-x1">
           <a href="#">
             <i class="material-icons menu-icon"></i>
             Item 1
           </a>
         </li>
-        <li>
+        <li class="s-x1">
           <a href="#">
             <i class="material-icons menu-icon"></i>
             Item 2
           </a>
         </li>
-        <li>
+        <li class="s-x1">
           <a href="#">
             <i class="material-icons menu-icon"></i>
             Item 3
@@ -98,13 +135,38 @@
         </li>
       </ul>
     </nav>
-    <section class="second h-full w-full l-col align-center">
+    <section class="second w-full l-col align-center">
       <article class="w-sd">
-        Article 1
+        <div class="title">BAALATH</div>
+        <div class="subtitle">(Baʹal·ath) [Place of the Mistress].</div>
+        <div class="meta">
+          <div>by: Travis Colbert</div>
+          <div>September 9, 2018</div>
+        </div>
+        <div class="lead">A border town of the original territory of Dan, mentioned at Joshua 19:44, 45 as being between Gibbethon and Jehud.</div>
+        <p>It is evidently the same place that Solomon later included in his rebuilding program. (2Ch 8:5, 6) Its identification geographically is uncertain; Josephus (Jewish Antiquities, VIII, 152 [vi, 1]) refers to it along with Beth-horon as not far from Gezer, another fortified city.—1Ki 9:17, 18.</p>
       </article>
       <article class="w-sd">
-        Article 2
+        <div class="title">BAAL</div>
+        <div class="subtitle">(Baʹal) [Owner; Master].</div>
+        <div class="meta">
+          <div>by: Travis Colbert</div>
+          <div>September 9, 2018</div>
+        </div>
+        <div class="lead">In the Scriptures, the Hebrew word baʹʽal is employed with reference to (1) a husband as owner of his wife (Ge 20:3); (2) landowners (Jos 24:11, ftn); (3) “owners of the nations” (Isa 16:8, ftn); (4) “confederates” (literally, “owners [masters] of a covenant”) (Ge 14:13, ftn); (5) owners or possessors of tangibles (Ex 21:28, 34; 22:8; 2Ki 1:8, ftn); (6) persons or things having something that is characteristic of their nature, manner, occupation, and the like, for example, an archer (literally, “owner of arrows”) (Ge 49:23), a “creditor of the debt” (literally, “owner of a debt of his hand”) (De 15:2), “anyone given to anger” (literally, “owner of anger”) (Pr 22:24), “judicial antagonist” (literally, “owner of judgment”) (Isa 50:8, ftn); (7) Jehovah (Ho 2:16); (8) false gods (Jg 2:11, 13).</div>
+        <p>The term hab·Baʹʽal (the Baal) is the designation applied to the false god Baal. The expression hab·Beʽa·limʹ (the Baals) refers to the various local deities thought of as owning or possessing and having influence over particular places.</p>
+        <p>The term “Baal” occurs once in the Christian Greek Scriptures, in Romans 11:4, where it is preceded in the Greek text by the feminine article he. Commenting on the use of the feminine article before “Baal” in the Greek Septuagint and Romans 11:4, John Newton wrote in an essay on Baal worship: “Though he is of the masculine gender in the Hebrew, [hab·Baʹʽal], the lord, yet Baal is called [he Baʹal], = the lady, in the Septuagint; Hos. ii. 8; Zeph. i. 4; and in the New Testament, Romans xi. 4. At the licentious worship of this androgyne, or two-sexed god, the men on certain occasions wore female garments, whilst the women appeared in male attire, brandishing weapons.”—Ancient Pagan and Modern Christian Symbolism, by T. Inman, 1875, p. 119.</p>
+        <p>At times in Israel’s history Jehovah was referred to as “Baal,” in the sense of his being the Owner or Husband of the nation. (Isa 54:5) Also, the Israelites may have improperly associated Jehovah with Baal in their apostasy. The latter appears to be borne out by Hosea’s prophecy that the time would come when Israel, after going into and being restored from exile, would repentantly call Jehovah “My husband,” and no more “My owner” (“My Baal,” AT). The context suggests that the designation “Baal” and its associations with the false god would never again pass the lips of the Israelites. (Ho 2:9-17) The bad connotation that appears to have become attached to the Hebrew word baʹʽal because of its association with the degraded worship of Baal is thought by some to be the reason the writer of Second Samuel used the names “Ish-bosheth” and “Mephibosheth” (boʹsheth means shame) instead of “Eshbaal” and “Merib-baal.”—2Sa 2:8; 9:6; 1Ch 8:33, 34; see ISH-BOSHETH.</p>
+        <p>Baal Worship. Little was known about Baal worship aside from the many Scriptural references to it until excavations at Ugarit (the modern Ras Shamra on the Syrian coast opposite the NE tip of the island of Cyprus) brought to light many religious artifacts and hundreds of clay tablets. Many of these ancient documents, now known as the Ras Shamra texts, are thought to be the liturgies of or words spoken by those participating in the rituals at the religious festivals.</p>
+        <p>In the Ras Shamra texts, Baal (also called Aliyan [the one who prevails] Baal) is referred to as “Zabul [Prince], Lord of the Earth” and “the Rider of the Clouds.” This harmonizes with a representation of Baal, showing him as holding a club or mace in his right hand and a stylized lightning flash with a spearhead in his left. He is also depicted as wearing a helmet with horns, suggesting an intimate connection with the bull, a symbol of fertility.</p>
+        <p>Normally from late April to September there is hardly any rain in Palestine. In October the rains start and continue throughout winter and into April, resulting in abundant vegetation. The changes of the seasons and the resulting effects were thought to come in cycles because of the never-ending conflicts between the gods. The cessation of the rains and the dying of vegetation were attributed to the triumph of the god Mot (death and aridity) over Baal (rain and fertility), compelling Baal to withdraw into the depths of the earth. The beginning of the rainy season was believed to indicate that Baal had awakened to life. This, it was thought, was made possible by the triumph of Baal’s sister Anath over Mot, allowing her brother Baal to return to his throne. The mating of Baal with his wife, presumably Ashtoreth, was believed to ensure fertility for the coming year.</p>
+        <p>The farming and cattle-raising Canaanites probably thought that their engaging in a prescribed ritual, a sort of sympathetic magic, helped to stimulate their gods to action according to the pattern enacted at their religious festivals and was necessary to ensure productive crops and herds in the coming year and to avert droughts, locust plagues, and so forth. Hence Baal’s coming to life again to be enthroned and mated with his consort apparently was celebrated with licentious fertility rites, marked by sexual orgies of unrestrained debauchery.</p>
+        <p>Undoubtedly each Canaanite city built its Baal sanctuary in honor of its local patron Baal. Priests were appointed to conduct the worship at these sanctuaries and the many shrines on neighboring hilltops known as high places. (Compare 2Ki 17:32.) Inside the shrines there may have been images or representations of Baal, whereas near the altars outside were to be found stone pillars (likely phallic symbols of Baal), sacred poles representing the goddess Asherah, and incense stands. (Compare 2Ch 34:4-7; see SACRED POLE.) Male and female prostitutes served at the high places, and besides ceremonial prostitution, even child sacrifice was practiced. (Compare 1Ki 14:23, 24; Ho 4:13, 14; Isa 57:5; Jer 7:31; 19:5.) Worship of Baal was also carried out right on the housetops of the people, from where sacrificial smoke to their god was frequently seen to rise.—Jer 32:29.</p>
+        <p>There are indications that Baal and other gods and goddesses of the Canaanite pantheon were associated in the minds of their worshipers with certain heavenly bodies. For instance, one of the Ras Shamra texts mentions an offering to “Queen Shapash (the Sun) and to the stars,” and another alludes to “the army of the sun and the host of the day.”</p>
       </article>
     </section>
+    <footer class="w-full l-col align-center">
+      This is another test
+    </footer>
   </body>
 </html>

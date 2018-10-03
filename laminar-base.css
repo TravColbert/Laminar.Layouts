@@ -64,6 +64,9 @@ footer {
   flex-grow: 0;
   flex-shrink: 0;
 }
+article {
+  flex-direction: column;
+}
 div {
   box-sizing: border-box;
   display: flex;
