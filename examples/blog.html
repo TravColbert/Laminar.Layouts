@@ -60,6 +60,11 @@
         padding: 14px 16px;
         text-decoration: none;
       }
+      
+      .fixed {
+        position: fixed;
+      }
+
       /* Change the link color to #111 (black) on hover */
       li a:hover {
         background-color: #fff;
@@ -101,14 +106,14 @@
   </head>
   <body class="align-center">
     <section class="first w-full align-center justify-center">
-      <div class="w-sd justify-center">
+      <div class="w-sd justify-center fixed">
         <div class="maintitle l-col textshadow align-center">
           <h1>Building cool things that live on the Internet</h1>
           <h2>What shall we do next?</h2>
         </div>
       </div>
     </section>
-    <nav role="navigation" class="w-sd">
+    <nav role="navigation" class="w-sd z-50">
       <ul class="nav w-full l-row">
         <li class="brand s-x3">
           <a href="/">
@@ -135,7 +140,7 @@
         </li>
       </ul>
     </nav>
-    <section class="second w-full l-col align-center">
+    <section class="second w-full l-col align-center z-25">
       <article class="w-sd">
         <div class="title">BAALATH</div>
         <div class="subtitle">(Baʹal·ath) [Place of the Mistress].</div>
